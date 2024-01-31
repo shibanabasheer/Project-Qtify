@@ -3,7 +3,7 @@ import LogoImage from "../../assets/Group 1.png";
 
 const Logo = () => {
     return (
-        <img src={LogoImage} alt="logo" width={67} />
+        <img src={LogoImage} alt="logo" width={67} height={34} />
     )
 }
 
