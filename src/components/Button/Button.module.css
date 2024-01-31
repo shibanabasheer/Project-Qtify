@@ -1,5 +1,5 @@
 .button{
-    font-size: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--color-black);
     color: var(--color-primary);
     border-radius: 12px;
