@@ -5,7 +5,7 @@ import styles from "./Logo.module.css"
 const Logo = () => {
     return (
         <div className={styles.logo}>
-            <img src={LogoImage} alt="logo" width={67} height={34} />
+            <img src={LogoImage} alt="logo" width={67} />
         </div>
         
     )
