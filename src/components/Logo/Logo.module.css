@@ -1,4 +1,5 @@
 .logo {
+    display: flex;
     align-items: center;
     /* margin-left: 32px; */
     /* margin-top: 32px; */
