@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-import { fetchTopAlbums } from "./api/api";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import Section from "./components/Section/Section";
-import styles from "./App.module.css"
+import { fetchTopAlbums } from "./api/api";
+// import { fetchTopAlbums } from "./api/api";
+// import Section from "./components/Section/Section";
+// import styles from "./App.module.css"
 
 function App() {
   const [topAlbumsData,setTopAlbumsData] = useState([]);
@@ -30,9 +31,9 @@ function App() {
           <Card data={topAlbum} type="album" key={topAlbum.id} />
         ))
       } */}
-      <div className={styles.sectionWrapper}>
+      {/* <div className={styles.sectionWrapper}>
         <Section data={topAlbumsData} title="Top Albums" type="album"/>
-      </div>
+      </div> */}
     </div>
   );
 }
