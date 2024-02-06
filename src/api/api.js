@@ -5,10 +5,18 @@ export const BACKEND_ENDPOINT = 'https://qtify-backend-labs.crio.do';
 export const fetchTopAlbums = async () => {
     try {
         const res = await axios.get(`${BACKEND_ENDPOINT}/albums/top`);
-        console.log(res);
+        // console.log(res);
         return res.data;
     } catch(err) {
         console.error(err);
     }
 }
 
+export const fetchSongs = async () => {
+    try {
+        const res = await axios.get(`${BACKEND_ENDPOINT}/songs`);
+        return res.data;
+    } catch (err) {
+        console.error(err);
+    }
+}
