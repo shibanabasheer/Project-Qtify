@@ -46,7 +46,7 @@ function App() {
     } else if (value === 2) {
       key = "pop"
     }
-    const res = songsData.filter((item) => item.genere.key === key);
+    const res = songsData.filter((item) => item.genre.key === key);
     filteredData(res);
   };
 
