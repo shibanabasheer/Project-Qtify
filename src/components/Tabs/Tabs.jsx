@@ -46,7 +46,12 @@ export default function BasicTabs({ value, handleChange }){
                   value={value}
                   onChange={handleChange}
                   aria-label="basic tabs example"
-                  textColor=""
+                  textColor="white"
+                  TabIndicatorProps={{
+                    style : {
+                        backgroundColor: "green",
+                    },
+                  }}
                 >
                     <Tab label="All" {...allyProps(0)} />
                     <Tab label="Rock" {...allyProps(1)} />

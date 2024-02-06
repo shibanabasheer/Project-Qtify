@@ -6,7 +6,7 @@ const Card = ({data,type}) => {
     const getCard = (type) => {
         switch(type) {
             case "album" : {
-                const { image,follows,title,slug,songs } = data;
+                const { image,follows,title,songs } = data;
                 return(
                     <Tooltip title={`${songs.length} songs`} placement="top" arrow>
                         <div className={styles.wrapper}>
