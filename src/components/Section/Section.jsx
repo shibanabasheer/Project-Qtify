@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Section.module.css"
-import { CircularProgress } from "@mui/material";
+import { Box, CircularProgress } from "@mui/material";
 import Card from "../Card/Card";
 
 const Section = ({data,title,type}) => {
@@ -18,17 +18,19 @@ const Section = ({data,title,type}) => {
             </div>
             {
                 data.length === 0 ? (
-                    <CircularProgress />
-                ):(
+                    <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                        <CircularProgress />
+                    </Box>
+                    
+                ):
                     <div className={styles.cardsWrapper}>{!carouselToggle?(<div className={styles.wrapper}>
                         {data.map((ele) => (
                             <Card data={ele} type={type} />
                         ))}
                     </div>):(<></>)}</div>
-                )
             }
         </div>
-    )
-}
+    );
+};
 
 export default Section;
