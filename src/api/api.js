@@ -9,7 +9,7 @@ export const fetchTopAlbums = async () => {
     } catch(err) {
         console.error(err);
     }
-}
+};
 
 export const fetchNewAlbums = async () => {
     try {
@@ -18,4 +18,13 @@ export const fetchNewAlbums = async () => {
     } catch(err) {
         console.error(err);
     }
-}
+};
+
+export const fetchSongs = async () => {
+    try {
+        const res = await axios.get(`${BACKEND_ENDPOINT}/songs`);
+        return res.data;
+    } catch(err) {
+        console.error(err);
+    }
+};
