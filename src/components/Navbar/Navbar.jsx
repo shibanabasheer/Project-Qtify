@@ -8,8 +8,8 @@ const Navbar = ({data}) => {
     return(
         <nav className={styles.navbar}>
             <Logo />
-            <Search placeholder="Search a album of your choice"/>
-            <Button text="Give Feedback"/>
+            <Search placeholder="Search an album"/>
+            <Button text="Feedback"/>
         </nav>
     )
 }
